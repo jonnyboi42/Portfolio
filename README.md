@@ -22,7 +22,7 @@ To run the project locally, ensure you have [Node.js](https://nodejs.org/) insta
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/simple-portfolio.git
+    git clone https://github.com/yourusername/Portfolio.git
     ```
 
 2. Navigate to the project directory:
@@ -40,7 +40,7 @@ To run the project locally, ensure you have [Node.js](https://nodejs.org/) insta
     npm run dev
     ```
 
-5. Open your browser and go to `http://localhost:3000` to view the portfolio.
+5. Open your browser and go to `http://localhost:5173` to view the portfolio.
 
 ## Future Goals
 
