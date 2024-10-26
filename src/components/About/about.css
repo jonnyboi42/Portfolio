@@ -1,0 +1,238 @@
+body {
+    margin: 20px;
+    font-family: "Space Grotesk", serif;
+    background: #f7f8f8;
+  }
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 15px;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-areas:
+        "header header"
+        "owner developer-image"
+        "skills projects"
+        
+}
+
+.header{
+    grid-area: header;
+}
+.owner {
+    grid-area: owner;
+}
+
+.developer-image {
+    grid-area: developer-image;
+}
+
+
+.skills {
+    grid-area: skills;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.about-section{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+
+}
+
+
+.about-section > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.about-section > div > h1{
+    
+    display: inline-block;
+    padding-bottom: .4em;
+    font-size: 2.2rem;
+    
+}
+.about-section > div > p{
+    line-height: 33px;
+    font-size: 1.2rem;
+    
+}
+
+
+/* Projects */
+
+.projects{
+    grid-column: span 1;
+}
+
+.projects > div > h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.projects > div > p {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    text-align: center;
+    
+}
+
+.projects > div > button{
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: .3em;
+    display: block;
+    margin: 1em auto; /* Center the button horizontally */
+    
+}
+
+
+
+
+
+
+
+/* Owner */
+
+.owner{
+    grid-column: span 1;    
+    padding-bottom: 2em;
+    
+}
+.owner > div{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(171, 162, 162);
+
+}
+.owner > div > h1{
+
+    font-size: 1.9rem;
+}
+
+.owner > div > p{
+    /* width: 40%; */
+    font-size: 1.2rem;
+    line-height: 1.4em;
+
+ 
+}
+
+.owner > div > p > span{
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.owner > img{
+    width: 100%;
+    border-radius: 250px;
+}
+
+.developer-image{
+    grid-column: span 1;
+}
+
+.developer-image > h1 {
+    display: none;
+}
+.developer-image > img{
+    width: 100%;
+    border-radius: 250px;
+}
+
+
+
+
+  /* Skills */
+
+  .skills > div > h1 {
+    font-size: 2rem;
+    
+  }
+
+  .skills > div > p {
+    font-size: 1.4rem;
+    
+  }
+
+ .skills-images{
+    display: flex;
+    gap: 1.3em;
+ }
+
+
+
+
+ @media screen and (max-width: 1500px){
+    html{
+        font-size: 14px;
+    }
+ }
+
+ @media screen and (max-width: 1200px){
+    .about-grid-container {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header" 
+            "developer-image"
+            "owner "
+            "skills "
+            "projects ";
+        
+  
+        
+    }
+
+    header{
+        grid-column: span 1;
+    }
+
+    .owner{
+        padding-bottom: 0;
+    }
+
+    .developer-image > img{
+        width: 50%;
+        
+        display: block;
+        margin: 0 auto;
+    }
+
+    .developer-image > h1 {
+        display: block;
+        font-size: 2rem;
+        /* text-align: center; */
+        
+    }
+
+    .owner > div > h1 {
+        display: none;
+    }
+
+    .skills > div > h1{
+        text-align: center;
+    }
+
+    .skills > div > p{
+        text-align: center;
+    }
+
+    .skills-images{
+        display: flex;
+        justify-content: center;
+    }
+
+
+ }
