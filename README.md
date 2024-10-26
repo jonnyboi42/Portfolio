@@ -1,50 +1,60 @@
-<img width="1423" alt="image" src="https://github.com/user-attachments/assets/a3a145bc-6819-40be-b2e8-c83a4eb95b93">
+<img width="1362" alt="image" src="https://github.com/user-attachments/assets/70beae2b-8a64-458a-b6e6-013b66ba4f5e">
 
-# Architecture Blog Website
+# Simple Portfolio
 
-This is a simple Architecture Blog Website built using **React** and **Vite**. It demonstrates responsive design with multiple articles displayed in a grid layout, adjusting to different screen sizes. The project showcases a modern layout and uses Google Fonts for typography styling.
+This is my personal portfolio project, designed to showcase my skills, projects, and background. This portfolio is still a work in progress, but the goal is to host it online soon, allowing it to be accessed through a dedicated URL.
+
+## About the Project
+
+This portfolio is built using **React** and **Vite** for a fast and efficient development experience. The design is fully responsive, ensuring it looks great on a variety of devices, from desktops to mobile screens. 
 
 ## Features
-- **Responsive Design**: The layout adapts to different screen sizes using CSS Grid and Flexbox.
-- **Multiple Articles**: Displays a featured article and a trio of other articles in a grid format.
-- **Modern Styling**: Utilizes modern CSS techniques and external fonts for a sleek look.
 
-## Technologies Used
-- **React**
-- **Vite**
-- **CSS Grid/Flexbox**
-- **Google Fonts**
+- **React & Vite**: Leveraging React’s component-based structure and Vite’s optimized build setup for faster development and performance.
+- **Responsive Design**: Styled to be responsive across different screen sizes, providing an accessible and visually appealing experience on any device.
+- **Showcase**: Sections dedicated to projects, skills, and a bit about me as a developer.
 
 ## Getting Started
 
-To view this project locally, follow these steps:
-
-### Prerequisites
-
-Make sure you have **Node.js** and **npm** installed on your machine.
+To run the project locally, ensure you have [Node.js](https://nodejs.org/) installed.
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/yourusername/simple-portfolio.git
+    ```
 
 2. Navigate to the project directory:
-   ```bash
-   cd project_directory
-   ```
+    ```bash
+    cd simple-portfolio
+    ```
 
 3. Install the dependencies:
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-### Running the Project
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-1. Start the development server:
-   ```bash
-   npm run dev
-   ```
+5. Open your browser and go to `http://localhost:3000` to view the portfolio.
 
-2. Open your browser and go to the URL provided by Vite (usually `http://localhost:5173` or similar) to view the project.
+## Future Goals
+
+- **Hosting**: I plan to host this project online soon, allowing it to be accessed by anyone.
+- **Additional Features**: I aim to keep adding sections and improvements over time, so stay tuned!
+
+## Feedback
+
+Feel free to reach out with any feedback or suggestions on how I can make this portfolio even better!
+
+---
+
+Thanks for visiting!
+
+
+
+
