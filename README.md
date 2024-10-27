@@ -1,4 +1,5 @@
-<img width="1331" alt="image" src="https://github.com/user-attachments/assets/b9a91385-470b-45f8-bf3b-50847f6ad1d6">
+<img width="1349" alt="image" src="https://github.com/user-attachments/assets/bd0dfba7-c329-461d-b1a8-e01e50b8a8f4">
+
 
 # Simple Portfolio
 
