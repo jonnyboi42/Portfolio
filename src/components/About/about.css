@@ -169,12 +169,15 @@ body {
 .developer-image > h1 {
     display: none;
 }
+
 .developer-image > img {
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid transparent; /* Set border to transparent to show only the glow */
+    border-radius: 300px;
     
+    box-shadow: 0 0 20px 5px rgba(76, 73, 215, 1); /* More pronounced glow effect */
 }
+
+
 
 
 

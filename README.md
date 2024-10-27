@@ -1,14 +1,12 @@
 <img width="1331" alt="image" src="https://github.com/user-attachments/assets/b9a91385-470b-45f8-bf3b-50847f6ad1d6">
 
-
-
 # Simple Portfolio
 
 This is my personal portfolio project, designed to showcase my skills, projects, and background. This portfolio is still a work in progress, but the goal is to host it online soon, allowing it to be accessed through a dedicated URL.
 
 ## About the Project
 
-This portfolio is built using **React** and **Vite** for a fast and efficient development experience. The design is fully responsive, ensuring it looks great on a variety of devices, from desktops to mobile screens. 
+This portfolio is built using **React** and **Vite** for a fast and efficient development experience. The design is fully responsive, ensuring it looks great on a variety of devices, from desktops to mobile screens.
 
 ## Features
 
@@ -23,24 +21,28 @@ To run the project locally, ensure you have [Node.js](https://nodejs.org/) insta
 ### Installation
 
 1. Clone this repository:
-    ```bash
-    git clone https://github.com/yourusername/Portfolio.git
-    ```
+
+   ```bash
+   git clone https://github.com/yourusername/Portfolio.git
+   ```
 
 2. Navigate to the project directory:
-    ```bash
-    cd simple-portfolio
-    ```
+
+   ```bash
+   cd simple-portfolio
+   ```
 
 3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 4. Start the development server:
-    ```bash
-    npm run dev
-    ```
+
+   ```bash
+   npm run dev
+   ```
 
 5. Open your browser and go to `http://localhost:5173` to view the portfolio.
 
@@ -56,7 +58,3 @@ Feel free to reach out with any feedback or suggestions on how I can make this p
 ---
 
 Thanks for visiting!
-
-
-
-
