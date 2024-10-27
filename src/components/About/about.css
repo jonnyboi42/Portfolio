@@ -6,7 +6,8 @@ html{
 body {
     margin: 20px;
     font-family: "Roboto Mono", monospace;
-    background: #f7f8f8;
+    background: #0d0d0d;
+    color: white;
   }
 
 .about-grid-container {
@@ -90,15 +91,26 @@ body {
     
 }
 
-.projects > div > button{
+.projects > div > a{
+    text-decoration: none;
+}
+.projects > div > a > button {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
     background: none;
-    border: 1px solid black;
+    border: 2px solid rgb(21, 209, 77);
+    color: white;
     border-radius: 10px;
     font-size: 1.3rem;
-    padding: .3em;
-    display: block;
+    padding: 0.5em;
     margin: 1em auto; /* Center the button horizontally */
-    
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.projects > div > a > button:hover {
+    background-color: rgba(21, 209, 77, 0.2); /* Adds a green shade on hover */
+    cursor: pointer;
 }
 
 
@@ -123,39 +135,46 @@ body {
 .owner > div > h1{
 
     font-size: 1.9rem;
+    
+    
 }
 
 .owner > div > p{
     /* width: 40%; */
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.4em;
 
  
 }
 
 .owner > div > p > span{
-    color: black;
+    color: rgb(65, 68, 226);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 .owner > img{
     width: 100%;
     border-radius: 250px;
+    
 }
 
 .developer-image{
     grid-column: span 1;
+    display: flex;
+    align-items: center;
+    
 }
 
 .developer-image > h1 {
     display: none;
 }
-.developer-image > img{
+.developer-image > img {
     width: 100%;
-    border-radius: 250px;
+    border-radius: 10px;
+    border: 2px solid transparent; /* Set border to transparent to show only the glow */
+    
 }
-
 
 
 
@@ -177,15 +196,23 @@ body {
  }
 
 
-
-
- @media screen and (max-width: 1500px){
+ @media screen and (max-width: 1600px){
     html{
-        font-size: 14px;
+        font-size: 13.5px;
     }
  }
 
+
+
+
+
+
+
+
+
  @media screen and (max-width: 1200px){
+ 
+
     .about-grid-container {
 
         grid-template-columns: 1fr;

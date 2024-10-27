@@ -6,8 +6,32 @@ header{
  grid-column: span 2;
 }
 
-header > a{
+header > a {
     text-decoration: none;
-    color: black;
+    color: rgb(234, 231, 231);
     font-size: 1.3rem;
+    position: relative; /* Needed for the pseudo-element */
+    padding-bottom: 2px; /* Space for the underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+
+
+header > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: red; /* Color of the underline */
+    box-shadow: 0 0 5px red, 0 0 10px red; /* Red glow effect */
+    transform: scaleX(0); /* Start as invisible */
+    transition: transform 0.3s ease; /* Smooth scaling */
+    transform-origin: right; /* Start the animation from the right */
+}
+
+header > a:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+    transform-origin: left; /* Expand from left to right */
 }

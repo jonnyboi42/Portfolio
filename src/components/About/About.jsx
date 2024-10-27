@@ -7,6 +7,7 @@ import cssIcon from '../../assets/imgs/css.svg'
 import viteIcon from '../../assets/imgs/vite.svg'
 import firebaseIcon from '../../assets/imgs/firebase.svg'
 import gitIcon from '../../assets/imgs/git.svg'
+import githubIcon from '../../assets/imgs/githubIcon.svg'
 const About = () => {
   return (
     <main className='about-grid-container'>
@@ -20,9 +21,9 @@ const About = () => {
             <div>
                 <h1>Meet The Developer</h1>
                 <p>
-                <span>Jon</span>, an aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences. 
+                <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
                 </p>
-                <p>Beyond coding, I bring a creative eye from my passion for interior and set design, which fuels my attention to detail and aesthetic sense. </p>
+                <p>With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences. </p>
                 
                 
             </div>
@@ -59,8 +60,11 @@ const About = () => {
                 <p>
                 From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions. 
                 </p>
-                <p>Leveraging Vite and React I've created fast, responsive UIs, while Firebase Authentication and Firebase Storage offer secure, scalable backend services that enhance the user experience.</p>
-                <button>View Projects</button>
+                
+                <a href="https://github.com/jonnyboi42" target="_blank">
+                    <button>View Projects <img src={githubIcon} alt="" /></button>
+                </a>
+                
             </div>
         </section>
 
