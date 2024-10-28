@@ -130,11 +130,15 @@ body {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgb(171, 162, 162);
+    padding-bottom: 1.3em;
 
 }
 .owner > div > h1{
 
     font-size: 1.9rem;
+    
+    display: inline-block;
+    
     
     
 }
@@ -153,29 +157,47 @@ body {
     font-size: 2.2rem;
 }
 
-.owner > img{
-    width: 100%;
-    border-radius: 250px;
+.owner > div > img{
+    width: 30%;
+    border-radius: 400px;
+    
+    margin: 0 auto;
     
 }
 
-.developer-image{
-    grid-column: span 1;
+.owner > div > button{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: .3em;
+    gap: 1.3em;
+    border: 2px solid rgb(40, 22, 155);
+    background: none;
+    color: white;
+    border-radius: 10px;
+    width: 27%;
+    font-size: 1.2rem;
     
 }
 
-.developer-image > h1 {
-    display: none;
+.education{
+    grid-column: span 1;
+
+
+    
 }
 
-.developer-image > img {
-    width: 100%;
-    border-radius: 300px;
-    
-    box-shadow: 0 0 20px 5px rgba(76, 73, 215, 1); /* More pronounced glow effect */
+.education > h1 {
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
+
+.education > p {
+    color: gray;
+}
+
 
 
 

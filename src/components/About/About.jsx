@@ -8,6 +8,9 @@ import viteIcon from '../../assets/imgs/vite.svg'
 import firebaseIcon from '../../assets/imgs/firebase.svg'
 import gitIcon from '../../assets/imgs/git.svg'
 import githubIcon from '../../assets/imgs/githubIcon.svg'
+import resumeIcon from '../../assets/imgs/resumeIcon.svg'
+import diplomaIcon from '../../assets/imgs/diplomaIcon.svg'
+import workIcon from '../../assets/imgs/workIcon.svg'
 const About = () => {
   return (
     <main className='about-grid-container'>
@@ -24,6 +27,8 @@ const About = () => {
                 <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
                 </p>
                 <p>With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences. </p>
+
+                <button>Resume <img src={resumeIcon} alt="" /></button>
                 
                 
             </div>
@@ -31,9 +36,14 @@ const About = () => {
             
         </section>
 
-        <section className='developer-image'>
-            <h1>Meet The Developer</h1>
-            <img src="src/assets/imgs/owner.jpg" alt="" />
+        <section className='education'>
+            <h1>Education <img src={diplomaIcon} alt="" /></h1>
+            <p>Bachelors Computer Science Texas State University</p>
+
+            <h1>Work Experience <img src={workIcon} alt="" /></h1>
+            <p>IT End User Support Level II: Texas A&M - 4 yrs</p>
+            <p>Educational Technologist: Austin Community College - 1.5 yrs</p>
+            
 
         </section>
 
