@@ -23,6 +23,7 @@ const About = () => {
             
             <div>
                 <h1>Meet The Developer</h1>
+                {/* <img src="src\assets\imgs\owner.jpg" alt="" /> */}
                 <p>
                 <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
                 </p>
@@ -37,6 +38,7 @@ const About = () => {
         </section>
 
         <section className='education'>
+            <h2>About</h2>
             <h1>Education <img src={diplomaIcon} alt="" /></h1>
             <p>Bachelors Computer Science Texas State University</p>
 
