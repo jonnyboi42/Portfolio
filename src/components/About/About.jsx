@@ -43,6 +43,11 @@ const About = () => {
             <h1>Work Experience <img src={workIcon} alt="" /></h1>
             <p>IT End User Support Level II: Texas A&M - 4 yrs</p>
             <p>Educational Technologist: Austin Community College - 1.5 yrs</p>
+
+            <h1>Interests</h1>
+            <p>Electronics</p>
+            <p>UI/UX</p>
+            <p>Prop Making</p>
             
 
         </section>

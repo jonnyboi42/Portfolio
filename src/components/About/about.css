@@ -182,6 +182,7 @@ body {
 
 .education{
     grid-column: span 1;
+    border-bottom: 1px solid gray;
 
 
     
