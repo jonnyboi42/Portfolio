@@ -356,12 +356,12 @@ body {
 
     .about-grid-container {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "header" 
-            "developer-image"
-            "owner "
-            "skills "
+            "header developer-projects" 
+            "owner skills "
+            
+            
             "projects ";
         
   
@@ -408,4 +408,28 @@ body {
     }
 
 
- }
+}
+
+
+
+@media screen and (max-width: 1150px){
+    .about-grid-container {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header" 
+            "developer-projects"
+            "owner"
+            "projects ";
+      
+    }
+
+    .developer-projects > img{
+        width: 100%;
+        
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
