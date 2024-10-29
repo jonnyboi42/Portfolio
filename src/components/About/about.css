@@ -6,7 +6,7 @@ html{
 body {
     margin: 20px;
     font-family: "Roboto Mono", monospace;
-    background: #0d0d0d;
+    background: #000000;
     color: white;
   }
 
@@ -19,8 +19,8 @@ body {
     margin: 20px auto;
     grid-template-areas:
         "header header"
-        "owner developer-image"
-        "skills projects"
+        "owner developer-projects"
+        "skills developer-projects"
         
 }
 
@@ -42,6 +42,10 @@ body {
 
 .projects {
     grid-area: projects;
+}
+
+.developer-projects{
+    grid-area: developer-projects;
 }
 
 .about-section{
@@ -114,6 +118,69 @@ body {
 }
 
 
+/* Developer Projects */
+
+.developer-projects{
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.developer-projects > div{
+    box-shadow: 10px 10px 20px rgba(18, 205, 68, 0.6); /* Purple glow */
+    padding: 2em;
+    border-radius: 50px;
+    margin-top: 2em;
+}
+.developer-projects > img{
+    width: 60%;
+    border-radius: 20px;
+
+    
+    
+}
+
+.developer-projects > div > h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.developer-projects > div > p {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    text-align: center;
+    
+}
+
+.developer-projects > div > a{
+    text-decoration: none;
+}
+
+
+
+.developer-projects > div > a > button {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+    background: none;
+    border: 2px solid rgb(21, 209, 77);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 0.5em;
+    margin: 1em auto; /* Center the button horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.developer-projects > div > a > button:hover {
+    background-color: rgba(21, 209, 77, 0.2); /* Adds a green shade on hover */
+    cursor: pointer;
+}
+
 
 
 
@@ -135,7 +202,7 @@ body {
 }
 .owner > div > h1{
 
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     
     display: inline-block;
     
@@ -165,19 +232,53 @@ body {
     
 }
 
-.owner > div > button{
+.owner > div > div {
+    display: flex;
+    gap: 2em;
+}
+
+.contact-button{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: .3em;
     gap: 1.3em;
-    border: 2px solid rgb(40, 22, 155);
+    border: 2px solid rgb(40, 22, 155); /* Border color */
     background: none;
     color: white;
     border-radius: 10px;
     width: 27%;
     font-size: 1.2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition */
     
+}
+
+.contact-button:hover {
+    
+    cursor: pointer;
+    background-color: rgba(26, 13, 115, 0.549); /* Adds a purple shade on hover */
+}
+
+.resume-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3em;
+    gap: 1.3em;
+    border: 2px solid rgb(40, 22, 155); /* Border color */
+    background: none;
+    color: white;
+    border-radius: 10px;
+    width: 27%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition */
+    
+}
+
+.resume-button:hover {
+    
+    cursor: pointer;
+    background-color: rgba(26, 13, 115, 0.549); /* Adds a purple shade on hover */
 }
 
 .education{
@@ -225,6 +326,16 @@ body {
     gap: 1.3em;
  }
 
+
+ .contact-email{
+    font-size: 2rem;
+    border-radius: 30px;
+    background-color: rgba(14, 14, 14, 0.549); /* Adds a purple shade on hover */
+    text-align: center;
+    border: 1px solid rgb(22, 29, 235);
+
+ }
+ 
 
  @media screen and (max-width: 1600px){
     html{

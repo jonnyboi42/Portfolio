@@ -11,6 +11,8 @@ import githubIcon from '../../assets/imgs/githubIcon.svg'
 import resumeIcon from '../../assets/imgs/resumeIcon.svg'
 import diplomaIcon from '../../assets/imgs/diplomaIcon.svg'
 import workIcon from '../../assets/imgs/workIcon.svg'
+import contactIcon from '../../assets/imgs/contactIcon.svg'
+import fileIcon from '../../assets/imgs/file.svg'
 const About = () => {
   return (
     <main className='about-grid-container'>
@@ -28,8 +30,12 @@ const About = () => {
                 <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
                 </p>
                 <p>With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences. </p>
-
-                <button>Resume <img src={resumeIcon} alt="" /></button>
+                
+                <div>
+                    <button className='contact-button'>Contact <img src={contactIcon} alt="" /></button>
+                    <button className='resume-button'>Resume <img src={fileIcon} alt="" /></button>
+                </div>
+                
                 
                 
             </div>
@@ -37,7 +43,24 @@ const About = () => {
             
         </section>
 
-        <section className='education'>
+        <section className='developer-projects'>
+            <img src="src/assets/imgs/scifihead.gif" alt="" />
+            <div>
+                
+                
+                <p>
+                From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions. 
+                </p>
+                
+                <a href="https://github.com/jonnyboi42" target="_blank">
+                    <button>View Projects <img src={githubIcon} alt="" /></button>
+                </a>
+            </div>
+            
+
+        </section>
+
+        {/* <section className='education'>
             <h2>About</h2>
             <h1>Education <img src={diplomaIcon} alt="" /></h1>
             <p>Bachelors Computer Science Texas State University</p>
@@ -52,7 +75,7 @@ const About = () => {
             <p>Prop Making</p>
             
 
-        </section>
+        </section> */}
 
         <section className='skills'>
             <div>
@@ -71,40 +94,12 @@ const About = () => {
 
         </section>
 
-        <section className='projects'>
-            <div>
-                <h1>Projects</h1>
-                <p>
-                From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions. 
-                </p>
-                
-                <a href="https://github.com/jonnyboi42" target="_blank">
-                    <button>View Projects <img src={githubIcon} alt="" /></button>
-                </a>
-                
-            </div>
-        </section>
 
-
-
-        {/* <section className='about-section'>
-            
-            <div>
-            <h1>Our Philosophy</h1>
-            <p>We believe that architecture should reflect the environment and tell a story. With our commitment to using concrete, glass, and steel, we create spaces that are not only visually striking but also durable and sustainable. Our designs challenge traditional norms, embracing the bold lines and geometric forms characteristic of brutalist style.</p>
-
-            </div>
-            <img src="src\assets\imgs\brutalist.jpg" alt="" />
-           
+        {/* <section className='contact-email'>
+            <p>Email: connelljon9@gmail.com</p>
         </section> */}
 
 
-
-  
-                
-
-         
-        
     
 
     </main>
