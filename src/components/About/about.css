@@ -8,7 +8,7 @@ body {
     font-family: "Roboto Mono", monospace;
     background: #000000;
     color: white;
-  }
+}
 
 .about-grid-container {
     display: grid;
@@ -74,6 +74,12 @@ body {
     line-height: 33px;
     font-size: 1.2rem;
     
+}
+
+
+/* Single Head Photo Section */
+.head-photo{
+    display: none;
 }
 
 
@@ -328,12 +334,22 @@ body {
 
 
  .contact-email{
-    font-size: 2rem;
-    border-radius: 30px;
+    margin-top: .8em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    width: 40%;
+    color: rgb(161, 19, 222);
+    border-radius: 10px;
     background-color: rgba(14, 14, 14, 0.549); /* Adds a purple shade on hover */
     text-align: center;
     border: 1px solid rgb(22, 29, 235);
+    
 
+ }
+
+ .contact-email > p{
+    text-align: center;
  }
  
 
@@ -354,7 +370,7 @@ body {
  @media screen and (max-width: 1200px){
  
 
-    .about-grid-container {
+    /* .about-grid-container {
 
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -366,7 +382,26 @@ body {
         
   
         
+    } */
+
+    body{
+        margin: 80px;
     }
+
+    .about-grid-container {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header" 
+             "owner"
+            "developer-projects"
+            "skills"
+            "projects ";
+        
+  
+        
+    }
+
 
     header{
         grid-column: span 1;
@@ -381,6 +416,16 @@ body {
         
         display: block;
         margin: 0 auto;
+        
+    }
+
+    .developer-projects{
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    .developer-projects > img{
+        display: none;
     }
 
     .developer-image > h1 {
@@ -412,7 +457,7 @@ body {
 
 
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 700px){
     .about-grid-container {
 
         grid-template-columns: 1fr;
