@@ -13,6 +13,7 @@ import diplomaIcon from '../../assets/imgs/diplomaIcon.svg'
 import workIcon from '../../assets/imgs/workIcon.svg'
 import contactIcon from '../../assets/imgs/contactIcon.svg'
 import fileIcon from '../../assets/imgs/file.svg'
+import xmarkIcon from '../../assets/imgs/xmarkIcon.svg'
 
 const About = () => {
   // State to manage email visibility
@@ -44,15 +45,20 @@ const About = () => {
 
                 {showEmail && (
                   <div className='contact-email'>
+                    <img 
+                      src={xmarkIcon} 
+                      alt="Close" 
+                      className='xmark-icon' 
+                      onClick={toggleEmail} 
+                    />
                     <p>connelljon9@gmail.com</p>
                   </div>
                 )}
             </div>
         </section>
 
-
         <section className='developer-projects'>
-            <img src="src/assets/imgs/scifihead.gif" alt="" />
+            <img src="src/assets/imgs/meetowner.gif" alt="" />
             <div>
                 <p>
                   From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions. 
