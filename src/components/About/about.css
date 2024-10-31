@@ -494,6 +494,18 @@ body {
         font-size: 10px;
     }
 
+    .contact-email{
+        width: 85%;
+    }
+
+    .contact-button{
+        width: 38%;
+    }
+
+    .resume-button{
+        width: 38%;
+    }
+
 }
 
 
