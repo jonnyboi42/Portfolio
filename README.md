@@ -1,4 +1,6 @@
-<img width="1433" alt="image" src="https://github.com/user-attachments/assets/c3519ecb-d5a3-426d-bec8-720c8ee4e13c">
+<img width="1425" alt="image" src="https://github.com/user-attachments/assets/a2781835-faa1-44de-b999-899ccb9e2a94">
+
+
 
 # Portfolio Link
 Click the link below to access the webpage
