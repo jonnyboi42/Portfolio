@@ -1,13 +1,13 @@
 <img width="1433" alt="image" src="https://github.com/user-attachments/assets/c3519ecb-d5a3-426d-bec8-720c8ee4e13c">
 
-
-
-
+# Portfolio Link
+Click the link below to access the webpage
+[Portfolio](https://jonnyboi42.github.io/Portfolio/)
 
 
 # Simple Portfolio
 
-This is my personal portfolio project, designed to showcase my skills, projects, and background. This portfolio is still a work in progress, but the goal is to host it online soon, allowing it to be accessed through a dedicated URL.
+This is my personal portfolio project, designed to showcase my skills, projects, and background. This portfolio is still a work in progress, there are more design changes to be implemented.
 
 ## About the Project
 
