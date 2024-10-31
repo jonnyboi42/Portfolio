@@ -23,12 +23,12 @@ const About = () => {
           </p>
           <p>With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences.</p>
           
-          <div>
+          {/* <div>
             <button className='contact-button' onClick={toggleEmail}>
-              Contact <img src={Icons.contactIcon} alt="" />
+              Contact 
             </button>
-            <button className='resume-button'>Resume <img src={Icons.fileIcon} alt="" /></button>
-          </div>
+            <button className='resume-button'>Resume </button>
+          </div> */}
 
           {showEmail && (
             <div className='contact-email'>
