@@ -14,6 +14,7 @@ import workIcon from '../../assets/imgs/workIcon.svg'
 import contactIcon from '../../assets/imgs/contactIcon.svg'
 import fileIcon from '../../assets/imgs/file.svg'
 import xmarkIcon from '../../assets/imgs/xmarkIcon.svg'
+import nodejsIcon from '../../assets/imgs/nodejsIcon.svg'
 
 const About = () => {
   // State to manage email visibility
@@ -81,13 +82,16 @@ const About = () => {
                     <img src={viteIcon} alt="Vite icon" />
                     <img src={firebaseIcon} alt="Firebase icon" />
                     <img src={gitIcon} alt="Git icon" />
+                    <img src={nodejsIcon} alt="" />
                 </div>
             </div>
         </section>
+        
 
+        {/* This Section Will Only Display During a Media Query
+        It is the Portfolio Head Image */}
         <section className='head-photo'>
-            <img src="src/assets/imgs/scifihead.gif" alt="" />
-            
+            <img src="src/assets/imgs/meetowner.gif" alt="" />
         </section>
     </main>
   )

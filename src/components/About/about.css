@@ -336,6 +336,7 @@ body {
 
  .skills-images{
     display: flex;
+    align-items: center;
     gap: 1.3em;
  }
 
@@ -408,7 +409,8 @@ body {
     }
 
     .head-photo{
-        display: none;
+        /* display: none; */
+        display: flex;
         justify-content: center;
     }
 
