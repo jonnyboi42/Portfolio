@@ -481,6 +481,12 @@ body {
 }
 
 
+@media screen and (max-width: 870px) {
+
+    .skills-images{
+        gap: .2em;
+    }
+}
 
 
 
