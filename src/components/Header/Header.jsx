@@ -5,7 +5,7 @@ const Header = () => {
     <header>
         <a href="">Home</a>
         <a href="">About</a>
-        <a href="">Linkedin</a>
+        <a href="www.linkedin.com/in/jon-san-migel-2937aa2ab">Linkedin</a>
     </header>
   )
 }
