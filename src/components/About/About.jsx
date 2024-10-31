@@ -15,7 +15,7 @@ import contactIcon from '../../assets/imgs/contactIcon.svg'
 import fileIcon from '../../assets/imgs/file.svg'
 import xmarkIcon from '../../assets/imgs/xmarkIcon.svg'
 import nodejsIcon from '../../assets/imgs/nodejsIcon.svg'
-import meetOwnerGif from './assets/imgs/meetowner.gif';
+import meetOwnerGif from '../../assets/imgs/meetowner.gif';
 const About = () => {
   // State to manage email visibility
   const [showEmail, setShowEmail] = useState(false)
