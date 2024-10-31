@@ -15,7 +15,7 @@ import contactIcon from '../../assets/imgs/contactIcon.svg'
 import fileIcon from '../../assets/imgs/file.svg'
 import xmarkIcon from '../../assets/imgs/xmarkIcon.svg'
 import nodejsIcon from '../../assets/imgs/nodejsIcon.svg'
-
+import meetOwnerGif from './assets/imgs/meetowner.gif';
 const About = () => {
   // State to manage email visibility
   const [showEmail, setShowEmail] = useState(false)
@@ -59,7 +59,7 @@ const About = () => {
         </section>
 
         <section className='developer-projects'>
-            <img src="src/assets/imgs/meetowner.gif" alt="" />
+            <img src={meetOwnerGif} alt="" />
             <div>
                 <p>
                   From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions. 
@@ -91,7 +91,7 @@ const About = () => {
         {/* This Section Will Only Display During a Media Query
         It is the Portfolio Head Image */}
         <section className='head-photo'>
-            <img src="src/assets/imgs/meetowner.gif" alt="" />
+            <img src={meetOwnerGif} alt="" />
         </section>
     </main>
   )
