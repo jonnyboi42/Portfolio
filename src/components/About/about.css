@@ -4,7 +4,7 @@ html{
 }
 
 body {
-    margin: 30px;
+    margin: 3.5%;
     
   
     font-family: "Roboto Mono", monospace;
@@ -232,7 +232,7 @@ body {
 }
 
 .owner > div > p > span{
-    color: rgb(65, 68, 226);
+    color: rgb(166 58 243);
     font-weight: 500;
     font-size: 2.2rem;
 }
@@ -256,14 +256,14 @@ body {
     justify-content: center;
     padding: .3em;
     gap: 1.3em;
-    border: 2px solid rgb(40, 22, 155); /* Border color */
+    border: 2px solid rgb(107, 13, 174); /* Border color */
     background: none;
     color: white;
     border-radius: 10px;
     width: 27%;
     font-size: 1.2rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition */
-    
+       
 }
 
 .contact-button:hover {
@@ -278,7 +278,7 @@ body {
     justify-content: center;
     padding: .3em;
     gap: 1.3em;
-    border: 2px solid rgb(40, 22, 155); /* Border color */
+    border: 2px solid rgb(107, 13, 174);  /* Border color */
     background: none;
     color: white;
     border-radius: 10px;
@@ -341,21 +341,21 @@ body {
  }
 
 
- .contact-email{
+ .contact-email {
     position: relative;
-    margin-top: .8em;
+    margin-top: 0.8em;
     display: flex;
     justify-content: center;
     font-size: 1.1rem;
     width: 40%;
     color: rgb(161, 19, 222);
     border-radius: 10px;
-    background-color: rgba(14, 14, 14, 0.549); /* Adds a purple shade on hover */
+    background-color: rgba(14, 14, 14, 0.8);
     text-align: center;
-    border: 1px solid rgb(22, 29, 235);
-    
+    border: 1px solid rgb(161, 19, 222);
 
- }
+}
+
 
  .xmark-icon {
     position: absolute;
@@ -382,11 +382,6 @@ body {
 
  @media screen and (max-width: 1200px){
     
-    /* body{
-        margin-left: 12em;
-        margin-right: 12em;
-    } */
-
     .about-grid-container {
 
         grid-template-columns: 1fr;
