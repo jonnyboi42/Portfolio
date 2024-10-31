@@ -82,7 +82,7 @@ const About = () => {
                     <img src={viteIcon} alt="Vite icon" />
                     <img src={firebaseIcon} alt="Firebase icon" />
                     <img src={gitIcon} alt="Git icon" />
-                    <img src={nodejsIcon} alt="" />
+                    {/* <img src={nodejsIcon} alt="" /> */}
                 </div>
             </div>
         </section>
