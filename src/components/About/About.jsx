@@ -77,7 +77,7 @@ const About = () => {
       </section>
 
       <section className='head-photo'>
-        <img src={meetOwnerGif} alt="" />
+        <img src={cityGif} alt="" />
       </section>
     </main>
   )
