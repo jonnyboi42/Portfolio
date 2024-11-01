@@ -3,6 +3,8 @@ import Header from '../Header/Header'
 import * as Icons from '../../assets/icons/icons'
 import meetOwnerGif from '../../assets/imgs/meetowner.gif';
 import cityGif from '../../assets/imgs/whitecity.jpg';
+import headPhoto from '../../assets/imgs/headphoto.jpg';
+
 
 
 
