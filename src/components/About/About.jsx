@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Header from '../Header/Header'
 import * as Icons from '../../assets/icons/icons'
 import meetOwnerGif from '../../assets/imgs/meetowner.gif';
+import cityGif from '../../assets/imgs/whitecity.jpg';
+
 
 
 const About = () => {
@@ -45,7 +47,7 @@ const About = () => {
       </section>
 
       <section className='developer-projects'>
-        <img src={meetOwnerGif} alt="" />
+        <img src={cityGif} alt="" />
         <div>
           <p>
             From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions.
