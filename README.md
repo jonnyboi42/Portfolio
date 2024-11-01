@@ -1,5 +1,4 @@
-<img width="1425" alt="image" src="https://github.com/user-attachments/assets/a2781835-faa1-44de-b999-899ccb9e2a94">
-
+<img width="1409" alt="image" src="https://github.com/user-attachments/assets/6b52b5bb-89c3-4ead-a2d4-f587138e0a74">
 
 
 # Portfolio Link
