@@ -4,6 +4,7 @@ import * as Icons from '../../assets/icons/icons'
 import meetOwnerGif from '../../assets/imgs/meetowner.gif';
 import cityGif from '../../assets/imgs/whitecity.jpg';
 import headPhoto from '../../assets/imgs/headphoto.jpg';
+import cube from '../../assets/imgs/cube.webp';
 
 
 
@@ -49,7 +50,7 @@ const About = () => {
       </section>
 
       <section className='developer-projects'>
-        <img src={cityGif} alt="" />
+        <img src={cube} alt="" />
         <div>
           <p>
             From API-driven dashboards to secure file storage applications, my work combines both front-end and back-end solutions.
@@ -77,7 +78,7 @@ const About = () => {
       </section>
 
       <section className='head-photo'>
-        <img src={cityGif} alt="" />
+        <img src={cube} alt="" />
       </section>
     </main>
   )
