@@ -233,6 +233,12 @@ body {
    
 }
 
+.owner > div > h1 > span{
+    color: rgb(19 153 153);
+    font-weight: 500;
+    
+}
+
 .owner > div > p{
     /* width: 40%; */
     font-size: 1.6rem;
@@ -244,7 +250,7 @@ body {
 .owner > div > p > span{
     color: rgb(19 153 153);
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 }
 
 .owner > div > img{

@@ -38,7 +38,7 @@ const About = () => {
       
       <section className='owner' ref={ownerRef}>
         <div>
-          <h1>Meet The Developer</h1>
+          <h1>Meet The <span>Developer!</span> </h1>
           <p>
             <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
           </p>
