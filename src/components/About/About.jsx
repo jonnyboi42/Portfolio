@@ -1,16 +1,32 @@
-import React, { useState } from 'react'
-import Header from '../Header/Header'
-import * as Icons from '../../assets/icons/icons'
+import React, { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
+import Header from '../Header/Header';
+import * as Icons from '../../assets/icons/icons';
 import meetOwnerGif from '../../assets/imgs/meetowner.gif';
 import cityGif from '../../assets/imgs/whitecity.jpg';
 import headPhoto from '../../assets/imgs/headphoto.jpg';
 import cube from '../../assets/imgs/cube.webp';
 
-
-
-
 const About = () => {
   const [showEmail, setShowEmail] = useState(false);
+
+  // Refs for GSAP animations
+  const ownerRef = useRef(null);
+  const developerProjectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  
+  useEffect(() => {
+    
+    // Animation for 'owner' section
+    gsap.fromTo(ownerRef.current, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out' });
+    
+    // Animation for 'developer-projects' section
+    gsap.fromTo(skillsRef.current, { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 1.8, delay: 1.3, ease: 'power3.out' });
+
+    // Animation for 'skills' section
+    gsap.fromTo(developerProjectsRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.9, delay: 1.8, ease: 'power3.out' });
+  }, []);
 
   const toggleEmail = () => {
     setShowEmail(prevShowEmail => !prevShowEmail);
@@ -20,21 +36,13 @@ const About = () => {
     <main className='about-grid-container'>
       <Header/>
       
-      <section className='owner'>
+      <section className='owner' ref={ownerRef}>
         <div>
           <h1>Meet The Developer</h1>
           <p>
             <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
           </p>
           <p>With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences.</p>
-          
-          {/* <div>
-            <button className='contact-button' onClick={toggleEmail}>
-              Contact 
-            </button>
-            <button className='resume-button'>Resume </button>
-          </div> */}
-
           {showEmail && (
             <div className='contact-email'>
               <img 
@@ -49,7 +57,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className='developer-projects'>
+      <section className='developer-projects' ref={developerProjectsRef}>
         <img src={cube} alt="" />
         <div>
           <p>
@@ -61,7 +69,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className='skills'>
+      <section className='skills' ref={skillsRef}>
         <div>
           <h1>Skills</h1>
           <p>I've worked with a range of frameworks and technologies to create responsive interfaces and secure, efficient backend solutions. Here are a few key tools I've used in my projects:</p>
@@ -81,7 +89,7 @@ const About = () => {
         <img src={cube} alt="" />
       </section>
     </main>
-  )
-}
+  );
+};
 
 export default About;

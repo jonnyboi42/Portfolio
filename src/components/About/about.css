@@ -225,7 +225,9 @@ body {
     /* box-shadow: 10px 10px 50px rgba(170, 10, 244, 0.6); */
     /* border-bottom: 2px solid rgb(10, 159, 125);
     border-top:2px solid rgb(10, 159, 125) ; */
-    padding: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    
     border-radius: 10px;
     
    
