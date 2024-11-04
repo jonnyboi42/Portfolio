@@ -8,6 +8,8 @@ import cityGif from '../../assets/imgs/whitecity.jpg';
 import headPhoto from '../../assets/imgs/headphoto.jpg';
 import cube from '../../assets/imgs/cube.webp';
 
+gsap.registerPlugin(TextPlugin);
+
 const About = () => {
   const [showEmail, setShowEmail] = useState(false);
 
@@ -15,17 +17,24 @@ const About = () => {
   const ownerRef = useRef(null);
   const developerProjectsRef = useRef(null);
   const skillsRef = useRef(null);
-  
+  const headingRef = useRef(null); // Ref for the heading with typing effect
+
   useEffect(() => {
-    
+    // Typing animation for "Meet The Developer!" heading
+    gsap.fromTo(
+      headingRef.current,
+      { text: '' },
+      { text: 'Meet The Developer!', duration: 1.8, ease: 'power3.out' }
+    );
+
     // Animation for 'owner' section
-    gsap.fromTo(ownerRef.current, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out' });
+    gsap.fromTo(ownerRef.current, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.5, delay: 1.9, ease: 'power3.out' });
     
     // Animation for 'developer-projects' section
-    gsap.fromTo(skillsRef.current, { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 1.8, delay: 1.3, ease: 'power3.out' });
+    gsap.fromTo(developerProjectsRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 2.8, delay: 3, ease: 'power3.out' });
 
     // Animation for 'skills' section
-    gsap.fromTo(developerProjectsRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.9, delay: 1.8, ease: 'power3.out' });
+    gsap.fromTo(skillsRef.current, { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 1.8, delay: 2, ease: 'power3.out' });
   }, []);
 
   const toggleEmail = () => {
@@ -34,13 +43,14 @@ const About = () => {
 
   return (
     <main className='about-grid-container'>
-      <Header/>
+      <Header />
       
-      <section className='owner' ref={ownerRef}>
-        <div>
-          <h1>Meet The <span>Developer!</span> </h1>
+      <section className='owner' >
+        <h1 ref={headingRef}>Meet The <span>Developer!</span></h1>
+        <div ref={ownerRef}>
+          {/* <h1 ref={headingRef}>Meet The <span>Developer!</span></h1> */}
           <p>
-            <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React. 
+            <span>Jon</span>, An aspiring web developer with a focus on crafting user-friendly interfaces and efficient solutions with React.
           </p>
           <p>With a strong foundation in modern web technologies, I am constantly exploring new ways to create seamless digital experiences.</p>
           {showEmail && (
@@ -81,6 +91,8 @@ const About = () => {
             <img src={Icons.viteIcon} alt="Vite icon" />
             <img src={Icons.firebaseIcon} alt="Firebase icon" />
             <img src={Icons.gitIcon} alt="Git icon" />
+            <img src={Icons.nodejsIcon} alt="Nodejs icon" />
+            <img src={Icons.bootstrapIcon} alt="Bootstrap icon" />
           </div>
         </div>
       </section>

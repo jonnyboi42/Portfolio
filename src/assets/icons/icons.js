@@ -13,6 +13,7 @@ import contactIcon from '../../assets/imgs/contactIcon.svg'
 import fileIcon from '../../assets/imgs/file.svg'
 import xmarkIcon from '../../assets/imgs/xmarkIcon.svg'
 import nodejsIcon from '../../assets/imgs/nodejsIcon.svg'
+import bootstrapIcon from '../../assets/imgs/bootstrap.svg'
 
 
 export {
@@ -31,4 +32,5 @@ export {
     fileIcon,
     xmarkIcon,
     nodejsIcon,
+    bootstrapIcon
 };

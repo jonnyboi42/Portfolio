@@ -218,7 +218,7 @@ body {
 }
 
 
-.owner > div > h1 {
+.owner > h1 {
     font-size: 2.5rem;
     display: inline-block;
     width: fit-content;
@@ -229,12 +229,13 @@ body {
     padding-bottom: .5em;
     
     border-radius: 10px;
+    grid-column: span 1;
     
    
 }
 
-.owner > div > h1 > span{
-    color: rgb(19 153 153);
+.owner > h1 > span{
+    color: rgb(19 153 153) !important;
     font-weight: 500;
     
 }
@@ -434,7 +435,7 @@ body {
         
     }
 
-    .owner > div >  h1{
+    .owner  >  h1{
         display: block;
         margin: 0 auto;
     }
