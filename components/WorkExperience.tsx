@@ -17,8 +17,11 @@ const jobs: Job[] = [
     icon: experienceIcons.developer,
     duties: [
       "Developed responsive and user-friendly web applications using React and Next.js.",
-      "Implemented reusable UI components and ensured consistent design with Tailwind CSS.",
-      "Optimized website performance, accessibility, and SEO for a seamless user experience.",
+      "Implemented reusable UI components and ensured consistent design with Tailwind CSS and Bootstrap.",
+      "Integrated state management using Redux to manage application state across multiple components.",
+      "Built and maintained APIs using Node.js and Express.js for backend communication.",
+      "Implemented secure and efficient database management using PostgreSQL.",
+      "Deployed applications on Render for reliable hosting and performance.",
     ],
   },
   {

@@ -15,12 +15,23 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
   // Toggle the menu visibility
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  // Scroll to top of the page when logo is clicked
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full bg-black shadow-md z-50 p-6 text-white flex justify-between items-center">
       {/* Left Section - Custom Logo and Links */}
       <div className="flex items-center gap-6">
         {/* Custom Logo (simple text logo) */}
-        <div className="flex items-center font-bold text-xl text-white">
+        <div
+          className="flex items-center font-bold text-xl text-white cursor-pointer"
+          onClick={scrollToTop} // Add the onClick event for scrolling to top
+        >
           JSM
         </div>
 
@@ -48,6 +59,19 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
               projectsRef.current?.scrollIntoView({ behavior: "smooth" })
             }
           />
+          {/* Resume Button Added back */}
+          <a
+            href="/ResumeJonSanMigel.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <CustomButton
+              title="RESUME"
+              route="#"
+              className="border-b-2 border-transparent hover:border-white transition-all duration-300 w-full"
+            />
+          </a>
         </div>
       </div>
 
@@ -88,6 +112,7 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
             setMenuOpen(false); // Close the menu
           }}
         />
+        {/* Resume Button for Hamburger Menu */}
         <a
           href="/ResumeJonSanMigel.pdf"
           target="_blank"

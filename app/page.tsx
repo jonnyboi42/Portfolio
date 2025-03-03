@@ -29,9 +29,10 @@ export default function Home() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="flex flex-col gap-10"
         >
-          <h1 className="text-3xl md:text-6xl text-center sm:text-left">
+          <h1 className="text-3xl md:text-6xl text-center sm:text-left font-orbitron">
             Meet The Developer
           </h1>
+
           <p className="text-xl md:text-2xl text-center sm:text-left">
             <span className="text-5xl">Jon</span>, An aspiring web developer
             with a focus on crafting user-friendly interfaces and efficient

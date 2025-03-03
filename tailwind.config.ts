@@ -12,6 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'sixtyfour-convergence': [
+          '"Sixtyfour Convergence"', 
+          'sans-serif'
+        ], // Add Sixtyfour Convergence font
+        'orbitron': [
+          '"Orbitron"', 
+          'sans-serif'
+        ], // Add Orbitron font
+      },
     },
   },
   plugins: [],
