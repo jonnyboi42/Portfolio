@@ -13,9 +13,10 @@ type Job = {
 
 const jobs: Job[] = [
   {
-    title: "Front-End Developer",
+    title: "Full-Stack Developer",
     icon: experienceIcons.developer,
     duties: [
+      "Independent Full Stack Developer",
       "Developed responsive and user-friendly web applications using React and Next.js.",
       "Implemented reusable UI components and ensured consistent design with Tailwind CSS and Bootstrap.",
       "Integrated state management using Redux to manage application state across multiple components.",
