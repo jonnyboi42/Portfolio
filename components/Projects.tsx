@@ -29,7 +29,42 @@ const projects = [
       "The application was deployed using Render for both front-end and back-end, making it easily accessible online.",
     ],
   },
-  // other projects...
+  {
+    title: "Smart Lights Interface",
+    icon: projectIcons.lights,
+    description: "An interface for controlling smart lights using Tuya's API.",
+    url: "https://github.com/jonnyboi42/Tuya-Blade-Runner-Smart-Lights-Interface",
+    technologies: [
+      "React for front-end development",
+      "Express.js for backend",
+      "Tuya Smart Light API",
+      "Figma for design",
+    ],
+    details: [
+      "Designed and built a smart lights interface for controlling lights using Tuya's Blade Runner API.",
+      "Used Figma for UI/UX design to ensure a user-friendly experience.",
+      "Integrated Tuya's Smart Light API to allow real-time control of connected smart devices.",
+      "Developed the backend using Express.js to manage API calls and communication between the frontend and the Tuya API.",
+    ],
+  },
+  {
+    title: "Firebase File Uploader",
+    icon: projectIcons.upload,
+    description:
+      "A file uploader app built with Firebase for file storage and authentication.",
+    url: "https://github.com/jonnyboi42/File-Storage_Application",
+    technologies: [
+      "React for front-end development",
+      "Firebase for file storage and authentication",
+      "Firebase Authentication for secure login",
+    ],
+    details: [
+      "Created a file uploader application where users can upload, search for, and delete files.",
+      "Implemented Firebase Authentication to allow secure user sign-in and access control.",
+      "Used Firebase Cloud Storage to handle file uploads and storage.",
+      "Built the front-end using React, ensuring a smooth and responsive user experience.",
+    ],
+  },
 ];
 
 export default function Projects() {
