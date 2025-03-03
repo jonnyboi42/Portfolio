@@ -4,7 +4,14 @@ import { experienceIcons } from "@/components/experienceIcons";
 import Image from "next/image";
 import { gsap } from "gsap";
 
-const jobs = [
+// Define the type for a job object
+type Job = {
+  title: string;
+  icon: string; // or Image if you use Image component types
+  duties: string[];
+};
+
+const jobs: Job[] = [
   {
     title: "Front-End Developer",
     icon: experienceIcons.developer,
@@ -43,10 +50,10 @@ const jobs = [
 ];
 
 export default function WorkExperience() {
-  const [selectedJob, setSelectedJob] = useState(jobs[0]);
+  const [selectedJob, setSelectedJob] = useState<Job>(jobs[0]);
   const dutiesRef = useRef<HTMLUListElement>(null);
 
-  const handleJobClick = (job) => {
+  const handleJobClick = (job: Job) => {
     setSelectedJob(job);
   };
 
