@@ -12,7 +12,7 @@ export default function Home() {
   const projectsRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <main className="px-10 min-h-screen pt-24 pb-24">
+    <main className="flex flex-col px-10 min-h-screen pt-24 pb-24">
       <Header experienceRef={experienceRef} projectsRef={projectsRef} />
 
       <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
@@ -33,7 +33,7 @@ export default function Home() {
             alt="Developer Picture"
             width={500} // Define the width for smaller screens
             height={500} // Define the height for smaller screens
-            className="object-contain"
+            className="object-contain hidden sm:block"
           />
         </section>
       </div>
@@ -73,14 +73,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Projects Section */}
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-
       {/* Work Experience Section */}
       <div ref={experienceRef}>
         <WorkExperience />
+      </div>
+
+      {/* Projects Section */}
+      <div ref={projectsRef}>
+        <Projects />
       </div>
 
       <Education />

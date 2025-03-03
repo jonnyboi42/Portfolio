@@ -68,7 +68,7 @@ export default function WorkExperience() {
   }, [selectedJob]);
 
   return (
-    <section className="max-w-4xl mx-auto py-20" id="experience">
+    <section className="max-w-4xl mx-auto mt-[100px]" id="experience">
       <h1 className="text-6xl text-center mb-10">Work Experience</h1>
       <div className="flex flex-col md:flex-row gap-6">
         {/* Job Options */}

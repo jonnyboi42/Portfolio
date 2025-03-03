@@ -87,7 +87,7 @@ export default function Projects() {
 
   return (
     <section
-      className="max-w-5xl mx-auto py-20  border-[#4444446b]"
+      className="max-w-5xl mx-auto mt-[100px]  border-[#4444446b]"
       id="projects"
     >
       <h1 className="text-6xl text-center mb-10">Projects</h1>
@@ -146,7 +146,7 @@ export default function Projects() {
           href={selectedProject.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition border border-[#f1f1f1]"
+          className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition border border-[#f1f1f1] mt-2"
         >
           <Image
             src={projectIcons.github}

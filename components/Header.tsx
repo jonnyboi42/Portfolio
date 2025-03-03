@@ -33,20 +33,21 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
             route="https://www.linkedin.com/in/jon-san-migel-2937aa2ab/"
             glowEffect={true} // Enable glow effect
           />
-          <CustomButton
-            title="PROJECTS"
-            route="#projects"
-            glowEffect={true} // Enable glow effect
-            onClick={() =>
-              projectsRef.current?.scrollIntoView({ behavior: "smooth" })
-            }
-          />
+
           <CustomButton
             title="EXPERIENCE"
             route="#experience"
             glowEffect={true} // Enable glow effect
             onClick={() =>
               experienceRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+          />
+          <CustomButton
+            title="PROJECTS"
+            route="#projects"
+            glowEffect={true} // Enable glow effect
+            onClick={() =>
+              projectsRef.current?.scrollIntoView({ behavior: "smooth" })
             }
           />
         </div>
