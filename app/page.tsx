@@ -73,14 +73,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Work Experience Section */}
-      <div ref={experienceRef}>
-        <WorkExperience />
-      </div>
-
       {/* Projects Section */}
       <div ref={projectsRef}>
         <Projects />
+      </div>
+
+      {/* Work Experience Section */}
+      <div ref={experienceRef}>
+        <WorkExperience />
       </div>
 
       <Education />

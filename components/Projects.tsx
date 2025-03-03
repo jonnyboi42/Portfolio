@@ -9,6 +9,24 @@ type Project = (typeof projects)[0];
 
 const projects = [
   {
+    title: "Smart Lights Interface",
+    icon: projectIcons.lights,
+    description: "An interface for controlling smart lights using Tuya's API.",
+    url: "https://github.com/jonnyboi42/Tuya-Blade-Runner-Smart-Lights-Interface",
+    technologies: [
+      "React for front-end development",
+      "Express.js for backend",
+      "Tuya Smart Light API",
+      "Figma for design",
+    ],
+    details: [
+      "Designed and built a smart lights interface for controlling lights using Tuya's Blade Runner API.",
+      "Used Figma for UI/UX design to ensure a user-friendly experience.",
+      "Integrated Tuya's Smart Light API to allow real-time control of connected smart devices.",
+      "Developed the backend using Express.js to manage API calls and communication between the frontend and the Tuya API.",
+    ],
+  },
+  {
     title: "Movie Theater Application",
     icon: projectIcons.movie,
     description: "A full-stack application for managing movie theater tickets.",
@@ -27,24 +45,6 @@ const projects = [
       "Used Express.js to serve the backend data and images for the front-end interface.",
       "Utilized Redux to handle state management, ensuring a smooth user experience.",
       "The application was deployed using Render for both front-end and back-end, making it easily accessible online.",
-    ],
-  },
-  {
-    title: "Smart Lights Interface",
-    icon: projectIcons.lights,
-    description: "An interface for controlling smart lights using Tuya's API.",
-    url: "https://github.com/jonnyboi42/Tuya-Blade-Runner-Smart-Lights-Interface",
-    technologies: [
-      "React for front-end development",
-      "Express.js for backend",
-      "Tuya Smart Light API",
-      "Figma for design",
-    ],
-    details: [
-      "Designed and built a smart lights interface for controlling lights using Tuya's Blade Runner API.",
-      "Used Figma for UI/UX design to ensure a user-friendly experience.",
-      "Integrated Tuya's Smart Light API to allow real-time control of connected smart devices.",
-      "Developed the backend using Express.js to manage API calls and communication between the frontend and the Tuya API.",
     ],
   },
   {
