@@ -1,8 +1,6 @@
 "use client";
 import React, { useState, RefObject } from "react";
 import CustomButton from "./CustomButton";
-import Image from "next/image";
-import Blade from "../public/icons/header/blade.svg";
 
 // Define the types for the props
 interface HeaderProps {
@@ -19,11 +17,11 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-black shadow-md z-50 p-6 text-white flex justify-between items-center">
-      {/* Left Section - Logo and Links */}
+      {/* Left Section - Custom Logo and Links */}
       <div className="flex items-center gap-6">
-        {/* Logo */}
-        <div className="flex items-center">
-          <Image src={Blade} alt="Logo" width={50} height={50} />
+        {/* Custom Logo (simple text logo) */}
+        <div className="flex items-center font-bold text-xl text-white">
+          JSM
         </div>
 
         {/* Links (visible on medium screens and up, hidden on small screens) */}
@@ -53,23 +51,15 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
         </div>
       </div>
 
+      {/* Hamburger Menu Content (Visible when menu is open on small screens) */}
+
       {/* Hamburger Menu Button (Visible on small screens only) */}
-      <button onClick={toggleMenu} className="md:hidden text-white text-2xl">
+      <button
+        onClick={toggleMenu}
+        className="md:hidden text-white text-2xl z-50"
+      >
         ☰
       </button>
-
-      {/* Right Section - Resume Button */}
-      <div className="hidden md:flex">
-        <a
-          href="/ResumeJonSanMigel.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <CustomButton title="RESUME" route="#" glowEffect={true} />
-        </a>
-      </div>
-
-      {/* Hamburger Menu Content (Visible when menu is open on small screens) */}
       <div
         className={`${
           menuOpen ? "flex" : "hidden"
@@ -78,30 +68,37 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
         <CustomButton
           title="LINKEDIN"
           route="https://www.linkedin.com/in/jon-san-migel-2937aa2ab/"
-          glowEffect={true}
+          className="border-b-2 border-transparent hover:border-white transition-all duration-300 w-full"
         />
         <CustomButton
           title="PROJECTS"
           route="#projects"
-          glowEffect={true}
-          onClick={() =>
-            projectsRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          className="border-b-2 border-transparent hover:border-white transition-all duration-300 w-full"
+          onClick={() => {
+            projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+            setMenuOpen(false); // Close the menu
+          }}
         />
         <CustomButton
           title="EXPERIENCE"
           route="#experience"
-          glowEffect={true}
-          onClick={() =>
-            experienceRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          className="border-b-2 border-transparent hover:border-white transition-all duration-300 w-full"
+          onClick={() => {
+            experienceRef.current?.scrollIntoView({ behavior: "smooth" });
+            setMenuOpen(false); // Close the menu
+          }}
         />
         <a
           href="/ResumeJonSanMigel.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          className="w-full"
         >
-          <CustomButton title="RESUME" route="#" glowEffect={true} />
+          <CustomButton
+            title="RESUME"
+            route="#"
+            className="border-b-2 border-transparent hover:border-white transition-all duration-300 w-full"
+          />
         </a>
       </div>
     </header>

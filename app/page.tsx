@@ -1,5 +1,6 @@
 "use client";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Header, CustomButton, WorkExperience, Projects } from "@/components";
 import { skillIcons } from "@/components/skillIcons"; // Import skillIcons object
@@ -12,46 +13,77 @@ export default function Home() {
   const projectsRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <main className="flex flex-col px-10 min-h-screen pt-24 pb-24">
+    <motion.main
+      initial={{ opacity: 0, y: 20 }} // Start position
+      animate={{ opacity: 1, y: 0 }} // End position
+      transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+      className="flex flex-col px-10 min-h-screen pt-24 pb-24"
+    >
       <Header experienceRef={experienceRef} projectsRef={projectsRef} />
 
       <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
         {/* Developer Info */}
-        <section className="flex flex-col gap-10">
-          <h1 className="text-3xl md:text-7xl">Meet The Developer / </h1>
-          <p className="text-xl md:text-2xl">
-            <span className="text-5xl colo">Jon</span>, An aspiring web
-            developer with a focus on crafting user-friendly interfaces and
-            efficient solutions with React.
+        <motion.section
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="flex flex-col gap-10"
+        >
+          <h1 className="text-3xl md:text-6xl text-center sm:text-left">
+            Meet The Developer
+          </h1>
+          <p className="text-xl md:text-2xl text-center sm:text-left">
+            <span className="text-5xl">Jon</span>, An aspiring web developer
+            with a focus on crafting user-friendly interfaces and efficient
+            solutions with React.
           </p>
-        </section>
+        </motion.section>
 
         {/* Developer Image */}
-        <section className="flex justify-center">
+        <motion.section
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="flex justify-center"
+        >
           <Image
-            src="/cube.webp" // Replace with the correct path or URL
+            src="/cube.webp"
             alt="Developer Picture"
-            width={500} // Define the width for smaller screens
-            height={500} // Define the height for smaller screens
+            width={500}
+            height={500}
             className="object-contain hidden sm:block"
           />
-        </section>
+        </motion.section>
       </div>
 
       {/* Skills and Projects Section */}
-      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+        className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10"
+      >
         <div className="flex flex-col gap-8">
           <h1 className="text-3xl md:text-5xl">Skills</h1>
           <div className="skill-icons flex gap-5 flex-wrap justify-center">
             {Object.entries(skillIcons).map(([key, Icon]) => (
-              <div key={key} className="icon-item">
+              <motion.div
+                key={key}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 * Math.random() }}
+                className="icon-item"
+              >
                 <Image src={Icon} alt={`${key} Icon`} width={50} height={50} />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
 
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
           className="flex flex-col text-center justify-center"
           style={{
             boxShadow: "10px 10px 20px rgb(12 175 176 / 60%)",
@@ -67,11 +99,11 @@ export default function Home() {
           <CustomButton
             title="Github"
             route="https://github.com/jonnyboi42"
-            className="flex gap-1 items-center bg-transparent border-2 border-gray-700 text-white rounded-[10px] text-xl mt-5 px-2 py-1 mx-auto transition-colors duration-300 hover:bg-gray-700"
-            icon={projectIcons.github} // Example of an SVG path
+            className="flex gap-2 items-center bg-transparent border-2 border-[#d5d8d7] text-white rounded-lg text-xl mt-5 px-4 py-2 mx-auto transition-all duration-300 transform hover:bg-black-700 hover:scale-105 hover:shadow-lg hover:border-[3px] hover:border-[#29988f] hover:ring-2 "
+            icon={projectIcons.github}
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Work Experience Section */}
       <div ref={experienceRef}>
@@ -84,6 +116,6 @@ export default function Home() {
       </div>
 
       <Education />
-    </main>
+    </motion.main>
   );
 }

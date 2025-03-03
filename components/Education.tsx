@@ -35,7 +35,9 @@ const Education = () => {
         <p className="text-xl">{EducationDetails.University}</p>
         <p className="text-lg text-gray-500">{EducationDetails.Minor} Minor</p>
       </div>
-      <p className="mb-4 text-lg">{EducationDetails.Description}</p>
+      <p className="mb-4 text-lg text-center sm:text-left">
+        {EducationDetails.Description}
+      </p>
       <div>
         <div className="flex justify-between">
           <div>
