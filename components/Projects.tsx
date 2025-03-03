@@ -87,7 +87,7 @@ export default function Projects() {
 
   return (
     <section
-      className="max-w-5xl mx-auto py-20 border-t-2 border-[#4444446b]"
+      className="max-w-5xl mx-auto py-20  border-[#4444446b]"
       id="projects"
     >
       <h1 className="text-6xl text-center mb-10">Projects</h1>
