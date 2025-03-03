@@ -7,8 +7,9 @@ import { projectIcons } from "@/components/ProjectIcons";
 import Education from "@/components/Education";
 
 export default function Home() {
-  const experienceRef = useRef(null);
-  const projectsRef = useRef(null);
+  // Explicitly typing the refs as HTMLDivElement | null
+  const experienceRef = useRef<HTMLDivElement | null>(null);
+  const projectsRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <main className="px-10 min-h-screen pt-24 pb-24">

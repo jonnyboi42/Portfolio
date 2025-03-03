@@ -6,8 +6,8 @@ import Blade from "../public/icons/header/blade.svg";
 
 // Define the types for the props
 interface HeaderProps {
-  experienceRef: RefObject<HTMLElement>;
-  projectsRef: RefObject<HTMLElement>;
+  experienceRef: RefObject<HTMLElement | null>;
+  projectsRef: RefObject<HTMLElement | null>;
 }
 
 const Header: React.FC<HeaderProps> = ({ experienceRef, projectsRef }) => {
