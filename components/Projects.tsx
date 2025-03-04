@@ -90,7 +90,7 @@ export default function Projects() {
       className="max-w-5xl mx-auto mt-[100px]  border-[#4444446b]"
       id="projects"
     >
-      <h1 className="text-6xl text-center mb-10">Projects</h1>
+      <h1 className="text-6xl text-center mb-10 font-jura">Projects</h1>
       {/* Horizontal Project List */}
       <div className="flex flex-wrap justify-center gap-6 pb-4">
         {projects.map((project, index) => (
@@ -122,17 +122,17 @@ export default function Projects() {
         <h2 className="text-4xl mb-4 flex items-center gap-2"></h2>
         <p className="mb-4">{selectedProject.description}</p>
 
-        <h3 className="text-xl font-semibold">TECHNOLOGIES USED</h3>
-        <ul className="list-none list-inside mb-4">
+        <h3 className="text-xl font-bold font-jura">TECHNOLOGIES USED</h3>
+        <ul className="list-none list-inside mb-4 mt-2">
           {selectedProject.technologies.map((tech, index) => (
             <li key={index}>{tech}</li>
           ))}
         </ul>
 
-        <h3 className="text-xl font-semibold">PROJECT DETAILS</h3>
+        <h3 className="text-xl font-bold font-jura ">PROJECT DETAILS</h3>
         <ul
           ref={detailsRef}
-          className="space-y-2 h-[175px] overflow-y-auto overflow-x-hidden scrollbar-custom"
+          className=" mt-2 space-y-2 h-[175px] overflow-y-auto overflow-x-hidden scrollbar-custom"
         >
           {selectedProject.details.map((detail, index) => (
             <li key={index} className="opacity-0">

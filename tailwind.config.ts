@@ -13,14 +13,10 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        'sixtyfour-convergence': [
-          '"Sixtyfour Convergence"', 
-          'sans-serif'
-        ], // Add Sixtyfour Convergence font
-        'orbitron': [
-          '"Orbitron"', 
-          'sans-serif'
-        ], // Add Orbitron font
+        'sixtyfour-convergence': ['"Sixtyfour Convergence"', 'sans-serif'],
+        'orbitron': ['"Orbitron"', 'sans-serif'],
+        'bungee-hairline': ['"Bungee Hairline"', 'sans-serif'],
+        'jura': ['"Jura"', 'sans-serif'], // Added Jura font
       },
     },
   },

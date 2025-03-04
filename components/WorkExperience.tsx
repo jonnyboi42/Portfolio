@@ -73,7 +73,7 @@ export default function WorkExperience() {
 
   return (
     <section className="max-w-4xl mx-auto mt-[100px]" id="experience">
-      <h1 className="text-6xl text-center mb-10">Work Experience</h1>
+      <h1 className="text-6xl text-center mb-10 font-jura">Work Experience</h1>
       <div className="flex flex-col md:flex-row gap-6">
         {/* Job Options */}
         <div className="flex flex-col w-full md:w-1/3 space-y-2">

@@ -34,9 +34,13 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl text-center sm:text-left">
-            <span className="text-5xl">Jon</span>, An aspiring web developer
-            with a focus on crafting user-friendly interfaces and efficient
-            solutions with React.
+            <span className="text-5xl font-jura">Jon</span>, An aspiring web
+            developer with a focus on crafting user-friendly interfaces and
+            efficient solutions with React.
+          </p>
+          <p className="text-xl md:text-2xl text-center sm:text-left">
+            Dedicated to crafting intuitive user experiences and collaborating
+            with teams to bring ideas to life.
           </p>
         </motion.section>
 
@@ -52,7 +56,7 @@ export default function Home() {
             alt="Developer Picture"
             width={500}
             height={500}
-            className="object-contain hidden sm:block"
+            className="object-contain hidden md:block"
           />
         </motion.section>
       </div>
@@ -65,7 +69,9 @@ export default function Home() {
         className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10"
       >
         <div className="flex flex-col gap-8">
-          <h1 className="text-3xl md:text-5xl">Skills</h1>
+          <h1 className="text-4xl md:text-5xl font-jura text-center sm:text-left">
+            SKILLS
+          </h1>
           <div className="skill-icons flex gap-5 flex-wrap justify-center">
             {Object.entries(skillIcons).map(([key, Icon]) => (
               <motion.div

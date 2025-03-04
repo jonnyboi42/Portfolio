@@ -20,8 +20,8 @@ const EducationDetails = {
 const Education = () => {
   return (
     <section className="max-w-4xl mx-auto mt-[100px]" id="education">
-      <h3 className="text-center text-6xl">Education</h3>
-      <h1 className="text-4xl font-semibold text-center mb-6 flex items-center justify-center gap-2">
+      <h3 className="text-center text-6xl font-jura">Education</h3>
+      <h1 className="text-4xl font-semibold text-center mb-6 flex items-center justify-center gap-2 pt-4">
         {/* Use the Image component with the path from educationIcons
         <Image
           src={educationIcons.education} // Path to the icon
