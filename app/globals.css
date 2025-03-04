@@ -8,10 +8,14 @@
 
 
 
- :root {
+/* :root {
   --background: #ffffff;
   --foreground: #000000;
-} 
+}  */
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+}
 
 * {
   margin: 0;
