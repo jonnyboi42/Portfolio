@@ -30,6 +30,7 @@ const jobs: Job[] = [
     title: "Technologies",
     icon: experienceIcons.skills, // You can set a relevant icon here
     duties: [
+      "Typescript",
       "React",
       "Vite",
       "Next.js",
