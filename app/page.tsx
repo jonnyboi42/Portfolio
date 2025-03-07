@@ -106,7 +106,7 @@ export default function Home() {
           <CustomButton
             title="Github"
             route="https://github.com/jonnyboi42"
-            className="flex gap-2 items-center bg-transparent border-2 border-[#d5d8d7] text-white rounded-lg text-xl mt-5 px-4 py-2 mx-auto transition-all duration-300 transform hover:bg-black-700 hover:scale-105 hover:shadow-lg hover:border-[3px] hover:border-[#29988f] hover:ring-2 "
+            className="flex gap-2 items-center bg-transparent border-2 border-[#d5d8d7] text-white rounded-lg text-xl mt-5 px-4 py-2 mx-auto transition-all duration-300 transform hover:bg-black-700 hover:scale-105 hover:shadow-lg hover:border-[3px] hover:border-[#29988f] hover:ring-2  font-orbitron"
             icon={projectIcons.github}
           />
         </motion.div>

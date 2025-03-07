@@ -9,6 +9,7 @@ type Job = {
   title: string;
   icon: string; // or Image if you use Image component types
   duties: string[];
+  technologies?: string[]; // Technologies field is optional
 };
 
 const jobs: Job[] = [
@@ -26,29 +27,18 @@ const jobs: Job[] = [
     ],
   },
   {
-    title: "IT Support Specialist",
-    icon: experienceIcons.support,
+    title: "Technologies",
+    icon: experienceIcons.skills, // You can set a relevant icon here
     duties: [
-      "Worked closely with system administrators to assist in IT projects, system maintenance, and managing user access through M365 Admin and Azure.",
-      "Troubleshot and resolved hardware and software issues across campus, including imaging and repairing devices.",
-      "Managed user accounts and permissions using On-Premise Active Directory (AD), M365 Admin Center, and Azure.",
-      "Provided support for network-related issues, diagnosing and resolving connectivity problems.",
-      "Utilized Intune and Exchange for device management, email setup, and ensuring security compliance.",
-      "Supported remote desktop solutions to facilitate remote work for employees",
-      "Maintained and repaired printers, ensuring proper configuration and functionality.",
-      "Offered software troubleshooting assistance to employees ensuring minimal downtime.",
-    ],
-  },
-  {
-    title: "End User Specialist",
-    icon: experienceIcons.support,
-    duties: [
-      "Provided remote support via Remote Desktop to troubleshoot and resolve end-user issues.",
-      "Assisted in network troubleshooting, diagnosing connectivity issues with routers, switches, and endpoints.",
-      "Automated repetitive IT tasks using PowerShell scripts to improve efficiency.",
-      "Set up new user devices, installed required software, and configured system settings.",
-      "Installed, configured, and troubleshot printers to ensure seamless operation.",
-      "Collaborated closely with system administrators on various projects related to mobile device management (MDM) and IT infrastructure.",
+      "React",
+      "Vite",
+      "Next.js",
+      "Bootstrap",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Postman",
+      "Tuya API for IoT Development",
+      "Redux",
     ],
   },
 ];
@@ -99,13 +89,29 @@ export default function WorkExperience() {
         {/* Job Details with Scrollable Content */}
         <div className="flex-1 bg-black-900 text-white p-6 rounded-lg h-[250px] overflow-y-auto scrollbar-custom">
           <h2 className="text-4xl mb-4">{selectedJob.title}</h2>
-          <ul ref={dutiesRef} className="space-y-2">
-            {selectedJob.duties.map((duty, index) => (
-              <li key={index} className="opacity-0">
-                {duty}
-              </li>
-            ))}
-          </ul>
+          {selectedJob.duties.length > 0 && (
+            <ul ref={dutiesRef} className="space-y-2">
+              {selectedJob.duties.map((duty, index) => (
+                <li key={index} className="opacity-0">
+                  {duty}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {/* Technologies Section */}
+          {selectedJob.technologies && (
+            <div className="mt-6">
+              <h3 className="text-2xl mb-4">Technologies</h3>
+              <ul className="space-y-2">
+                {selectedJob.technologies.map((tech, index) => (
+                  <li key={index} className="opacity-0">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </section>
