@@ -9,15 +9,3 @@ You can access the live version of the portfolio at [https://jonsanmigelportfoli
 - **Next.js**: A React framework for building optimized and fast applications.
 - **Tailwind CSS**: A utility-first CSS framework used to style this application quickly and responsively.
 
-## Getting Started
-
-To run the development server locally, use one of the following commands:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
