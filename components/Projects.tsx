@@ -87,7 +87,7 @@ export default function Projects() {
 
   return (
     <section
-      className="max-w-5xl mx-auto mt-[100px]  border-[#4444446b]"
+      className="max-w-5xl mx-auto mt-[55px] sm:mt-50px] md:mt-[30px]  border-[#4444446b]"
       id="projects"
     >
       <h1 className="text-6xl text-center mb-10 font-jura">Projects</h1>

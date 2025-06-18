@@ -19,7 +19,7 @@ const EducationDetails = {
 
 const Education = () => {
   return (
-    <section className="max-w-4xl mx-auto mt-[100px]" id="education">
+    <section className="max-w-4xl mx-auto mt-[55px] sm:mt-50px] md:mt-[30px]">
       <h3 className="text-center text-6xl font-jura">Education</h3>
       <h1 className="text-4xl font-semibold text-center mb-6 flex items-center justify-center gap-2 pt-4">
         {/* Use the Image component with the path from educationIcons
@@ -38,7 +38,7 @@ const Education = () => {
       <p className="mb-4 text-lg text-center sm:text-left">
         {EducationDetails.Description}
       </p>
-      <div>
+      {/* <div>
         <div className="flex justify-between">
           <div>
             <h2 className="text-2xl font-medium mb-2">COURSES</h2>
@@ -61,7 +61,7 @@ const Education = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
