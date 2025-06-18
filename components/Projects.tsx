@@ -146,7 +146,7 @@ export default function Projects() {
           href={selectedProject.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition border border-[#f1f1f1] mt-2"
+          className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition border border-[#f1f1f1] mt-8 sm:mt-6 md:mt-4 lg:mt-1"
         >
           <Image
             src={projectIcons.github}
