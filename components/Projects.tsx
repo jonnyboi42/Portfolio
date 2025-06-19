@@ -122,14 +122,18 @@ export default function Projects() {
         <h2 className="text-4xl mb-4 flex items-center gap-2"></h2>
         <p className="mb-4">{selectedProject.description}</p>
 
-        <h3 className="text-xl font-bold font-jura">TECHNOLOGIES USED</h3>
+        <h3 className="text-xl font-jura font-extrabold border-b-2 border-white inline-block">
+          TECHNOLOGIES USED
+        </h3>
         <ul className="list-none list-inside mb-4 mt-2">
           {selectedProject.technologies.map((tech, index) => (
             <li key={index}>{tech}</li>
           ))}
         </ul>
 
-        <h3 className="text-xl font-bold font-jura ">PROJECT DETAILS</h3>
+        <h3 className="text-xl font-bold font-jura border-b-2 border-white inline-block">
+          PROJECT DETAILS
+        </h3>
         <ul
           ref={detailsRef}
           className=" mt-2 space-y-2 h-[175px] overflow-y-auto overflow-x-hidden scrollbar-custom"
